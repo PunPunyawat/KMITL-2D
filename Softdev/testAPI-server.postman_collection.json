@@ -1,0 +1,1243 @@
+{
+	"info": {
+		"_postman_id": "0eb923c3-dcee-4195-8d36-7fed6bf0878e",
+		"name": "testAPI-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index",
+			"item": [
+				{
+					"name": "server post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjNiMDRlOTlhNTBjODM3ZmNhODEyMiIsImlhdCI6MTY1MDcwMjE3OSwiZXhwIjoxNjUzMjk0MTc5fQ.t5ASfap1r5hNUCByguQQHTXUVbOgymrSnImw-K5Mg2Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "text",
+									"value": "today00000",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "admin99999",
+									"type": "default",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/index/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"index",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "server delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjM3NGJmNDlhMjJjNjU2YmI3ZDExZiIsImlhdCI6MTY1MDY4NTIxOCwiZXhwIjoxNjUzMjc3MjE4fQ.kYLvspYCMuOxhPDLEt9bWpJkh05vABdasot_vkq8QXM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "text",
+									"value": "ariaa_updatedata",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/index/62637819f11830c7bc52f06b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"index",
+								"62637819f11830c7bc52f06b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "server get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjM3NGJmNDlhMjJjNjU2YmI3ZDExZiIsImlhdCI6MTY1MDY4NTk0OCwiZXhwIjoxNjUzMjc3OTQ4fQ.erp2prmuvdcuQkzK1V1xqW7la8cnJGVwG1n7g9XvAR8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/index/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"index",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "server put(update)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjM3NGJmNDlhMjJjNjU2YmI3ZDExZiIsImlhdCI6MTY1MDY4NTk0OCwiZXhwIjoxNjUzMjc3OTQ4fQ.erp2prmuvdcuQkzK1V1xqW7la8cnJGVwG1n7g9XvAR8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "text",
+									"value": "qqqq",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "PPadmin",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/index/62637819f11830c7bc52f06b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"index",
+								"62637819f11830c7bc52f06b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "registerUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userName",
+									"value": "test_Admin_Present",
+									"type": "default"
+								},
+								{
+									"key": "userSurename",
+									"value": "test_Admin_Present2",
+									"type": "default"
+								},
+								{
+									"key": "userEmail",
+									"value": "63090999@kmitl.ac.th",
+									"type": "default"
+								},
+								{
+									"key": "userPassword",
+									"value": "test0000",
+									"type": "default"
+								},
+								{
+									"key": "userAddress",
+									"value": "KMITL",
+									"type": "default"
+								},
+								{
+									"key": "userProfilePic",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "userDescription",
+									"value": "I love u",
+									"type": "default"
+								},
+								{
+									"key": "userInterest",
+									"value": "only u",
+									"type": "default"
+								},
+								{
+									"key": "userTel",
+									"value": "0981325563",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjM2ZWUxNDlhMjJjNjU2YmI3ZDBmMSIsImlhdCI6MTY1MDY4NDM1OCwiZXhwIjoxNjUzMjc2MzU4fQ.Q3-DA4pkxfFFML2UYE8J21bXxhIr2Q-Eqry7rSayPh0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userEmail",
+									"value": "63010777@kmitl.ac.th",
+									"type": "default"
+								},
+								{
+									"key": "userPassword",
+									"value": "test1111",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjQzYzExZjU5Y2VmZThkYzA5YzQwZiIsImlhdCI6MTY1MDczNjE0NSwiZXhwIjoxNjUzMzI4MTQ1fQ.t6wlCyAy7-HfQXu6ndIGNesurg2CAIEF6Y9e3xj9B9g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/user/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userID",
+									"value": "Newpun",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "userName",
+									"value": "UPDATEzz",
+									"type": "default"
+								},
+								{
+									"key": "userSurename",
+									"value": "data_update",
+									"type": "default"
+								},
+								{
+									"key": "userEmail",
+									"value": "Newpun",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "userPassword",
+									"value": "Newpun",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "userAddress",
+									"value": "data_update",
+									"type": "default"
+								},
+								{
+									"key": "userProfilePic",
+									"value": "data_update",
+									"type": "default"
+								},
+								{
+									"key": "userDescription",
+									"value": "data_update",
+									"type": "default"
+								},
+								{
+									"key": "userInterest",
+									"value": "data_update",
+									"type": "default"
+								},
+								{
+									"key": "userTel",
+									"value": "Newpun",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/user/editprofile/62643c11f59cefe8dc09c40f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"user",
+								"editprofile",
+								"62643c11f59cefe8dc09c40f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userEmail",
+									"value": "63010666@kmitl.ac.th",
+									"type": "default"
+								},
+								{
+									"key": "userPassword",
+									"value": "test0000",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/user/deleteme",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"user",
+								"deleteme"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkEmailtoRepass",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userEmail",
+									"value": "63010777@kmitl.ac.th",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/user/checkEmail_repass",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"user",
+								"checkEmail_repass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Repassword",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "test00000",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userPassword",
+									"value": "test1111",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/user/rePassword/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"user",
+								"rePassword",
+								":id"
+							],
+							"query": [
+								{
+									"key": "userPassword",
+									"value": "test1111",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "62680a69e515cf1d288d475c"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "addProduct_tocart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjViYzc1NDJiM2ZkYmZmMDczNTViZSIsImlhdCI6MTY1MDk1NzcwNCwiZXhwIjoxNjUzNTQ5NzA0fQ.bIwGNosAvb3HniW2iT1lL_zWje4eYRsf_r0AkkpvLfk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartID\": \"1\",\r\n    \"cProductID\" : \"test1\",\r\n    \"cProductNum\" : 1,\r\n    \"cProductPrice\": 100\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/cart/user/cart-add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"cart",
+								"user",
+								"cart-add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_allproductCart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjViYzc1NDJiM2ZkYmZmMDczNTViZSIsImlhdCI6MTY1MDk1NzcwNCwiZXhwIjoxNjUzNTQ5NzA0fQ.bIwGNosAvb3HniW2iT1lL_zWje4eYRsf_r0AkkpvLfk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/cart/delete-allcart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"cart",
+								"delete-allcart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProduct-tocart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjViYzc1NDJiM2ZkYmZmMDczNTViZSIsImlhdCI6MTY1MDk1NzcwNCwiZXhwIjoxNjUzNTQ5NzA0fQ.bIwGNosAvb3HniW2iT1lL_zWje4eYRsf_r0AkkpvLfk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartID\": \"1\",\r\n    \"cProductID\" : \"test5\",\r\n    \"cProductNum\" : 1,\r\n    \"cProductPrice\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/cart/user/cart-delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"cart",
+								"user",
+								"cart-delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "getOrder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderClientID\": \"Punpunzzzzz\",\r\n    \"orderTraderID\": \"123244zzzzz\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOrder_Shop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/orders/shopId/123244zzzzz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"orders",
+								"shopId",
+								"123244zzzzz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOrder_user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/orders/userId/Punpunzzzzz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"orders",
+								"userId",
+								"Punpunzzzzz"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "ShopRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/register_shop/:userID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"register_shop",
+								":userID"
+							],
+							"variable": [
+								{
+									"key": "userID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pickup time",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/register_shopPickup/:shopID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"register_shopPickup",
+								":shopID"
+							],
+							"variable": [
+								{
+									"key": "shopID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addproduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "productPic",
+									"type": "file",
+									"src": "/C:/Users/Pun Punyawat/OneDrive/Pictures/Camera Roll/doctor-strange-fan-art_1576095733.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/register_product/123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"register_product",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addReview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/add_review/:productID/:shopID/:userID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"add_review",
+								":productID",
+								":shopID",
+								":userID"
+							],
+							"variable": [
+								{
+									"key": "productID",
+									"value": ""
+								},
+								{
+									"key": "shopID",
+									"value": ""
+								},
+								{
+									"key": "userID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/update_shop/:shopID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"update_shop",
+								":shopID"
+							],
+							"variable": [
+								{
+									"key": "shopID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePickuptime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/update_shopPickup/:shopID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"update_shopPickup",
+								":shopID"
+							],
+							"variable": [
+								{
+									"key": "shopID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/update_product/:productID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"update_product",
+								":productID"
+							],
+							"variable": [
+								{
+									"key": "productID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteShopID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/delete_shop/:shopID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"delete_shop",
+								":shopID"
+							],
+							"variable": [
+								{
+									"key": "shopID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteShopUserID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/delete_shopByUser/:userID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"delete_shopByUser",
+								":userID"
+							],
+							"variable": [
+								{
+									"key": "userID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProductID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/delete_product/:productID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"delete_product",
+								":productID"
+							],
+							"variable": [
+								{
+									"key": "productID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowInfoShop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/show_infoShop/:shopID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"show_infoShop",
+								":shopID"
+							],
+							"variable": [
+								{
+									"key": "shopID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowInfoShopbyUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/show_infoShopByUser/:userID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"show_infoShopByUser",
+								":userID"
+							],
+							"variable": [
+								{
+									"key": "userID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showShopPickup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/show_shopPickup/:shopID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"show_shopPickup",
+								":shopID"
+							],
+							"variable": [
+								{
+									"key": "shopID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowProductbyShop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/show_productByShop/:shopID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"show_productByShop",
+								":shopID"
+							],
+							"variable": [
+								{
+									"key": "shopID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowProductByCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/show_productByCategory/:productCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"show_productByCategory",
+								":productCategory"
+							],
+							"variable": [
+								{
+									"key": "productCategory",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowReviewProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/show_review/:productID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"show_review",
+								":productID"
+							],
+							"variable": [
+								{
+									"key": "productID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3300/api/showAllProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"showAllProduct"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
